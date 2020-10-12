@@ -22,7 +22,12 @@ $check-2: #ff5656
     font-weight: 700
     text-align: center
     text-transform: uppercase
-
+.descr
+    color: #222222
+    font-size: 17px
+    font-weight: 400
+    text-align: center
+    margin: 19px 0 32px 0
 //*Header
 .header
     position: relative
@@ -32,6 +37,7 @@ $check-2: #ff5656
         padding: 13px 0
         height: 50px
         background-color: #212121
+        z-index: 50
     &_menu
         text-align: center
         ul
@@ -114,3 +120,99 @@ $check-2: #ff5656
         margin: 0 auto
         margin-top: 118px
         font-size: 18px
+//*Cause
+.section_top
+    width: 112px
+    height: 24px
+    background-color: #000000
+    margin: 0 auto
+    color: #ffffff
+    font-size: 11px
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
+    padding: 5px 0
+.cause
+    padding: 71px 0 65px 0
+    .subtitle
+        margin-top: 38px
+    &_reason
+        display: flex
+        align-items: center
+        margin-top: 35px
+        height: 140px
+        &_elipse
+            width: 113px
+            height: 113px
+            background-color: #1eacc7
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+        &_descr
+            width: 341px
+            margin-left: 26px
+        &_title
+            color: $main-color
+            font-size: 17px
+            font-weight: 400
+        &_text
+            font-size: 15px
+            font-weight: 300
+            line-height: normal
+//*API 
+.api
+    padding: 48px 0 61px 0
+    background: url(../images/api_bg.jpg) center center/cover no-repeat
+    .subtitle
+        margin-top: 38px
+    .first
+        background: url(../images/api/api_1.jpg) center center/cover no-repeat
+    .second
+        background: url(../images/api/api_2.jpg) center center/cover no-repeat
+    .third
+        background: url(../images/api/api_3.jpg) center center/cover no-repeat
+    .fourth
+        background: url(../images/api/api_4.jpg) center center/cover no-repeat
+    .fifth
+        background: url(../images/api/api_5.jpg) center center/cover no-repeat
+    .sixth
+        background: url(../images/api/api_6.jpg) center center/cover no-repeat
+    &_block
+        position: relative
+        width: 320px
+        height: 280px
+        margin-bottom: 19px
+        &_descr
+            color: #ffffff
+            font-size: 24px
+            font-weight: 400
+            text-align: center
+            text-transform: uppercase
+            padding-top: 91px
+        &_plus
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 35px
+            width: 26px
+            height: 26px
+            background-color: #000000
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 14px
+                height: 2px
+                background-color: $main-color
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                width: 2px
+                height: 14px
+                background-color: $main-color
