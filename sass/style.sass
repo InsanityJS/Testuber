@@ -216,3 +216,89 @@ $check-2: #ff5656
                 width: 2px
                 height: 14px
                 background-color: $main-color
+//*Choice
+.choice
+    background: url(../images/choice_bg.jpg) center center/cover no-repeat
+    padding: 56px 0 138px 0
+    img
+        display: block
+        margin: 0 auto
+    .section_top
+        background-color: #ffffff
+        color: #070716
+        margin-bottom: 32px
+    .subtitle
+        color: #ffffff
+    .descr
+        color: #ffffff
+        margin: 0 0 56px 0
+    &_motivation
+        margin: 0 auto
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+//*Require
+.require
+    padding: 68px 0 84px 0
+    .subtitle
+        margin-top: 33px
+    &_title
+        margin-top: 33px
+        color: $check-1
+        font-size: 22px
+        font-weight: 400
+    &_list
+        position: relative
+        list-style-type: none
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        margin-top: 10px
+        padding-right: 55px
+        &::before
+            content: url(../icons/require_blue.png)
+            position: absolute
+            display: block
+            left: -30px
+            top: 4px
+    &_text
+        font-size: 17px
+        color: $check-1
+        font-weight: 300
+    .bottom
+        margin-top: 62px
+        color: $check-2
+    .red
+        .require_list
+            &::before
+                content: url(../icons/require_red.png)
+                position: absolute
+                display: block
+                left: -30px
+                top: 4px
+//*Cities
+.cities
+    background: url(../images/cities_bg.jpg) center center/cover no-repeat
+    height: 717px
+    padding: 49px
+    .section_top
+        background-color: #ffffff
+        color: #070716
+    .subtitle
+        color: #ffffff
+        margin-top: 32px
+    .descr
+        color: #ffffff
+        margin: 0
+    &_look
+        display: block
+        margin-top: 486px
+        text-align: center
+        color: #1fbad6
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        &:hover
+            text-decoration: none
+            color: #1fbad6
